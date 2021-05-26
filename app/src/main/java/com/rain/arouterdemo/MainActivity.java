@@ -21,16 +21,16 @@ public class MainActivity extends AppCompatActivity {
 
         ARouter.getInstance().inject(this);
 
+        Bundle bundle = new Bundle();
         findViewById(R.id.btn_01).setOnClickListener(v -> {
             XRouter.getRouter().create(AppNavigator.class)
-                    .toSelectContactPage().startActivityForResult(new ContactSelectInfoCallback() {
+                    .toSelectContactPage(bundle).startActivityForResult(new ContactSelectInfoCallback() {
                 @Override
                 public void onResponse(@NonNull SelectInfo data) {
                     Log.e("Rain",data.getName() +"-----------onResponse--------");
                 }
             });
         });
-
     }
 
 

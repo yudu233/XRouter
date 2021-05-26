@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 public interface IActivityManagerService {
+
     String PATH = "/xrouter/service/activityManager";
 
     Context getContext();

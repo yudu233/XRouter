@@ -1,8 +1,6 @@
 package com.rain.arouterdemo.arouter;
 
-/**
- * @author MondyXue <a href="mailto:mondyxue@gmail.com">E-Mail</a>
- */
+
 public final class RouteExtras {
 
     public static final String PathFrom = "_PathFrom";

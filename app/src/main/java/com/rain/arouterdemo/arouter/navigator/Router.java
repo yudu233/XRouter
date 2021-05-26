@@ -7,12 +7,14 @@ import com.rain.arouterdemo.arouter.callback.RouteCallback;
 import com.rain.arouterdemo.arouter.service.IActivityManagerService;
 
 public interface Router {
+
     String PATH = "/xrouter/navigator";
 
     <T> T create(Class<T> navigator);
-    NavigatorBuilder build(String path);
-    Context getContext();
 
+    NavigatorBuilder build(String path);
+
+    Context getContext();
 
     IActivityManagerService getActivityManager();
 

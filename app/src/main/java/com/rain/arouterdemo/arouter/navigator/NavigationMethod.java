@@ -37,6 +37,7 @@ public class NavigationMethod {
     }
 
     public Object invoke(Object[] args) {
+
         NavigatorBuilder builder = XRouter.getRouter().build(mRoute.path());
         Navigator navigator = builder
                 .withRequestCode(mRoute.requestCode())
