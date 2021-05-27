@@ -4,6 +4,13 @@ import android.content.Intent;
 
 import androidx.annotation.NonNull;
 
+/**
+ *  @AuthorName :       Rain
+ *  @Org        :       https://www.yudu233.com
+ *  @CreateDate :       5/26/21 4:52 PM
+ *  @VersonCode :       1.0
+ *  @Descroption :      a callback
+ */
 public abstract class RouteCallback<T>{
 
     public void onResponse(int requestCode, int resultCode, Intent data){

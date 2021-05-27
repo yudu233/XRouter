@@ -6,6 +6,13 @@ import com.rain.arouterdemo.arouter.annotation.Route;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
+/**
+ *  @AuthorName :       Rain
+ *  @Org        :       https://www.yudu233.com
+ *  @CreateDate :       5/26/21 4:48 PM
+ *  @VersonCode :       1.0
+ *  @Descroption :      调用invoke方法的助手类
+ */
 public class NavigationMethod {
 
     private final Class<?> returnType;
@@ -29,23 +36,12 @@ public class NavigationMethod {
 
     }
 
-    private static boolean isNavigator(Class<?> returnType) {
-        return returnType == ActivityNavigator.class
-                || returnType == FragmentNavigator.class
-                || returnType == ServiceNavigator.class
-                || returnType == Navigator.class;
-    }
-
     public Object invoke(Object[] args) {
 
         NavigatorBuilder builder = XRouter.getRouter().build(mRoute.path());
         Navigator navigator = builder
                 .withRequestCode(mRoute.requestCode())
                 .navigator();
-        if (isNavigator(returnType)) {
-            return navigator;
-        }
-
         return navigator;
     }
 }

@@ -1,4 +1,4 @@
-package com.rain.arouterdemo.arouter.impl;
+package com.rain.arouterdemo.arouter.service;
 
 import android.os.Bundle;
 
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.template.IProvider;
-import com.rain.arouterdemo.arouter.RouteExtras;
+import com.rain.arouterdemo.arouter.Constant;
 import com.rain.arouterdemo.arouter.XRouter;
 import com.rain.arouterdemo.arouter.callback.RouteCallback;
 import com.rain.arouterdemo.arouter.navigator.Navigator;
@@ -30,8 +30,7 @@ public class NavigatorImpl implements Navigator {
         int requestCode = -1;
         Bundle extras = mPostcard.getExtras();
         if (extras != null) {
-            // check the request code
-            requestCode = extras.getInt(RouteExtras.RequestCode, requestCode);
+            requestCode = extras.getInt(Constant.RequestCode, requestCode);
             if (requestCode == -1) {
                 requestCode = 200;
             }

@@ -1,21 +1,28 @@
 package com.rain.arouterdemo.arouter;
 
-import com.alibaba.android.arouter.exception.InitException;
 import com.alibaba.android.arouter.launcher.ARouter;
-import  com.rain.arouterdemo.arouter.navigator.Router;
+import com.rain.arouterdemo.arouter.navigator.Router;
 
+/**
+ *  @AuthorName :       Rain
+ *  @Org        :       https://www.yudu233.com
+ *  @CreateDate :       5/26/21 4:36 PM
+ *  @VersonCode :       1.0
+ *  @Descroption :
+ */
 public class XRouter {
-    private static Router sRouter;
+
+    private static Router router;
 
     /**
      * 获取ARouter实例
      * @return
      */
     public static Router getRouter(){
-        if(sRouter == null){
-            sRouter = (Router) ARouter.getInstance().build(Router.PATH).navigation();
+        if(router == null){
+            router = (Router) ARouter.getInstance().build(Router.PATH).navigation();
         }
-        return sRouter;
+        return router;
     }
 }
 

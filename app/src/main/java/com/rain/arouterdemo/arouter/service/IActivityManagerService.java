@@ -4,9 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
+/**
+ *  @AuthorName :       Rain
+ *  @Org        :       https://www.yudu233.com
+ *  @CreateDate :       5/26/21 4:38 PM
+ *  @VersonCode :       1.0
+ *  @Descroption :
+ */
 public interface IActivityManagerService {
-
-    String PATH = "/xrouter/service/activityManager";
 
     Context getContext();
 

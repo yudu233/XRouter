@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  * @Org :              https://www.yudu233.com
  * @CreateDate :       5/26/21 10:49 AM
  * @VersonCode :       1.0
- * @Descroption :       方法参数注解
+ * @Descroption :      方法参数注解
  */
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)

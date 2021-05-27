@@ -8,6 +8,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
+/**
+ *  @AuthorName :       Rain
+ *  @Org        :       https://www.yudu233.com
+ *  @CreateDate :       5/26/21 4:37 PM
+ *  @VersonCode :       1.0
+ *  @Descroption :      选择联系人页面
+ */
 @Route(path = AppNavigator._selectPage)
 public class SelectContactActivity extends AppCompatActivity {
     @Override
